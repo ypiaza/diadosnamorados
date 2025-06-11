@@ -14,7 +14,7 @@ const App = () => {
       <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover -z-10">
         <source src={background} type="video/mp4" />
       </video>
-      <div className='flex items-center flex-col justify-evenly w-full h-full bg-white/30 backdrop-blur border border-white/20 rounded-2xl p-8 transition-all '>
+      <div className='flex items-center flex-col justify-evenly w-full h-full bg-white/30 backdrop-blur border border-white/20 rounded-2xl py-4 px-8 transition-all '>
         <div className={`flex-col gap-2 ${click ? 'hidden' : 'flex'}`}>
           <img src={nos1} className='rounded-md border border-white/20' />
           <img src={nos2} className='rounded-md border border-white/20' />
@@ -22,7 +22,7 @@ const App = () => {
         </div>
         <div className={`flex-col gap-5 ${click === false ? 'hidden' : 'flex'}`}>
 
-          <h1 className='text-4xl font-bold text-blue-700/60'>Oi, gatinha!</h1>
+          <h1 className='text-4xl font-bold text-red-700/60'>Oi, gatinha!</h1>
           <p className='text-xl font-medium text-black/80 text-justify'>Fiz isso aqui só para te lembrar nesse dia dos namorados, que você é muito, muito, muito especial. Eu sou muito feliz de ter você todos os dias comigo, você é a prova do amor e cuidado de Deus para mim e é por você que não desisto e quero cada dia ser melhor. Te amo e te quero para sempre e sempre!</p>
           <div className='flex items-center justify-center mt-12 gap-5 transition-all'>
             <FaHeart className='text-red-500 text-3xl animate-bounce delay-75' />
