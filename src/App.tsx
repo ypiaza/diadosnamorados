@@ -10,7 +10,7 @@ const App = () => {
   const [click, setClick] = useState(false)
 
   return (
-    <div className='relative flex items-center justify-center w-full h-screen overflow-hidden p-8'>
+    <div className='relative flex items-center justify-center w-full h-screen overflow-hidden p-12'>
       <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover -z-10">
         <source src={background} type="video/mp4" />
       </video>
@@ -34,7 +34,7 @@ const App = () => {
           </div>
         </div>
         <button onClick={() => setClick(true)} className={`bg-blue-700/60 shadow-2xl shadow-blue-500/50 text-white text-2xl font-bold p-5 rounded-2xl ${click ? 'hidden' : ''}`}>Clique aqui!</button>
-        <button onClick={() => setClick(false)} className={`bg-blue-700/60 shadow-2xl shadow-red-500/50 text-white text-2xl font-bold p-5 rounded-2xl ${click ? '' : 'hidden'}`}>
+        <button onClick={() => setClick(false)} className={`bg-red-700/60 shadow-2xl shadow-red-500/50 text-white text-2xl font-bold p-5 rounded-2xl ${click ? '' : 'hidden'}`}>
 TE AMO!</button>
       </div>
     </div>
