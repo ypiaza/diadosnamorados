@@ -10,11 +10,11 @@ const App = () => {
   const [click, setClick] = useState(false)
 
   return (
-    <div className='relative flex items-center justify-center w-full h-screen overflow-hidden px-10 py-18'>
+    <div className='relative flex items-center justify-center w-full h-screen overflow-hidden px-8 py-20'>
       <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover -z-10">
         <source src={background} type="video/mp4" />
       </video>
-      <div className='flex items-center flex-col justify-evenly w-full h-full bg-white/30 backdrop-blur border border-white/20 rounded-2xl py-2 px-8 transition-all '>
+      <div className='flex items-center flex-col justify-evenly w-full h-full bg-white/30 backdrop-blur border border-white/20 rounded-2xl px-8 transition-all '>
         <div className={`flex-col gap-2 ${click ? 'hidden' : 'flex'}`}>
           <img src={nos1} className='rounded-md border border-white/20' />
           <img src={nos2} className='rounded-md border border-white/20' />
