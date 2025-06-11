@@ -20,7 +20,7 @@ const App = () => {
           <img src={nos2} className='rounded-md border border-white/20' />
           <img src={nos3} className='rounded-md border border-white/20' />
         </div>
-        <div className={`flex-col justify-evenly gap-5 ${click === false ? 'hidden' : 'flex'}`}>
+        <div className={`flex-col justify-between gap-5 ${click === false ? 'hidden' : 'flex'}`}>
           <div className={'flex item-center justify-between'} >
             <img src={nos1} className='rounded-md border border-white/20' />
           </div>
