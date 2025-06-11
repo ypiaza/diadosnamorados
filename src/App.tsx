@@ -20,10 +20,16 @@ const App = () => {
           <img src={nos2} className='rounded-md border border-white/20' />
           <img src={nos3} className='rounded-md border border-white/20' />
         </div>
-        <div className={`flex-col gap-5 ${click === false ? 'hidden' : 'flex'}`}>
-
-          <h1 className='text-4xl font-bold text-red-700/60'>Oi, gatinha!</h1>
-          <p className='text-xl font-medium text-black/80 text-justify'>Fiz isso aqui só para te lembrar nesse dia dos namorados, que você é muito, muito, muito especial. Eu sou muito feliz de ter você todos os dias comigo, você é a prova do amor e cuidado de Deus para mim e é por você que não desisto e quero cada dia ser melhor. Te amo e te quero para sempre e sempre!</p>
+        <div className={`flex-col justify-evenly gap-5 ${click === false ? 'hidden' : 'flex'}`}>
+          <div className='flex item-center justify-between w-full'}>
+            <img src={nos1} className='rounded-md border border-white/20' />
+            <img src={nos2} className='rounded-md border border-white/20' />
+            <img src={nos3} className='rounded-md border border-white/20' />
+          </div>
+          <div>
+            <h1 className='text-4xl font-bold text-red-700/60'>Oi, gatinha!</h1>
+            <p className='text-xl font-medium text-black/80 text-justify'>Fiz isso aqui só para te lembrar nesse dia dos namorados, que você é muito, muito, muito especial. Eu sou muito feliz de ter você todos os dias comigo, você é a prova do amor e cuidado de Deus para mim e é por você que não desisto e quero cada dia ser melhor. Te amo e te quero para sempre e sempre!</p>
+          </div>
           <div className='flex items-center justify-center mt-12 gap-5 transition-all'>
             <FaHeart className='text-red-500 text-3xl animate-bounce delay-75' />
             <FaHeart className='text-red-500 text-3xl animate-bounce delay-100'/>
