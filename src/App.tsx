@@ -14,7 +14,7 @@ const App = () => {
       <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover -z-10">
         <source src={background} type="video/mp4" />
       </video>
-      <div className='flex items-center flex-col justify-evenly w-full h-full bg-white/30 backdrop-blur border border-white/20 rounded-2xl p-3 transition-all '>
+      <div className='flex items-center flex-col justify-evenly w-full h-full bg-white/30 backdrop-blur border border-white/20 rounded-2xl p-8 transition-all '>
         <div className={`flex-col gap-2 ${click ? 'hidden' : 'flex'}`}>
           <img src={nos1} className='rounded-md border border-white/20' />
           <img src={nos2} className='rounded-md border border-white/20' />
@@ -34,7 +34,7 @@ const App = () => {
           </div>
         </div>
         <button onClick={() => setClick(true)} className={`bg-blue-700/60 shadow-2xl shadow-blue-500/50 text-white text-2xl font-bold p-5 rounded-2xl ${click ? 'hidden' : ''}`}>Clique aqui!</button>
-        <button onClick={() => setClick(false)} className={`bg-blue-700/60 shadow-2xl shadow-blue-500/50 text-white text-2xl font-bold p-5 rounded-2xl ${click ? '' : 'hidden'}`}>
+        <button onClick={() => setClick(false)} className={`bg-blue-700/60 shadow-2xl shadow-red-500/50 text-white text-2xl font-bold p-5 rounded-2xl ${click ? '' : 'hidden'}`}>
 TE AMO!</button>
       </div>
     </div>
