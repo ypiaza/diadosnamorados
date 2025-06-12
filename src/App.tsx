@@ -10,11 +10,11 @@ const App = () => {
   const [click, setClick] = useState(false)
 
   return (
-    <div className='relative flex items-center justify-center w-full h-screen overflow-hidden px-2 py-32 bg-center bg-cover bg-no-repeat'
+    <div className='flex items-center justify-center w-full h-screen overflow-hidden px-2 py-26 bg-center bg-cover bg-no-repeat'
          style={{
           backgroundImage:`url(${background})`
          }}>
-      <div className='flex items-center flex-col justify-evenly w-full h-full bg-transparent backdrop-blur border-2 border-t-white/30 border-r-white/30 border-b-white/20 border-l-white/10 rounded-2xl px-8 transition-all '>
+      <div className='flex items-center flex-col justify-evenly w-full h-full bg-transparent backdrop-blur border-2 border-t-white/30 border-r-white/30 border-b-white/20 border-l-white/10 rounded-2xl px-4 transition-all '>
         <div className={`grid-cols-2 gap-2 ${click ? 'hidden' : 'grid'}`}>
           <img src={nos1} className='rounded-md border object-cover border-white/20' />
           <img src={nos2} className='rounded-md border object-cover border-white/20' />
@@ -23,7 +23,7 @@ const App = () => {
           <img src={nos2} className='rounded-md border object-cover border-white/20' />
           <img src={nos3} className='rounded-md border object-cover border-white/20' />
         </div>
-        <div className={`flex-col justify-evenly gap-2 p-5 ${click === false ? 'hidden' : 'flex'}`}>
+        <div className={`flex-col justify-center gap-2 ${click === false ? 'hidden' : 'flex'}`}>
           <div className={'flex item-center justify-between'} >
             <img src={nos1} className='rounded-xl border object-cover border-white/20' />
           </div>
