@@ -14,14 +14,14 @@ const App = () => {
          style={{
           backgroundImage:`url(${background})`
          }}>
-      <div className='flex items-center flex-col justify-evenly w-full h-full bg-transparent backdrop-blur border-2 border-t-white/30 border-r-white/30 border-b-white/20 border-l-white/10 rounded-2xl px-4 transition-all '>
+      <div className='flex items-center flex-col justify-center gap-5 w-full bg-transparent backdrop-blur border-2 border-t-white/30 border-r-white/30 border-b-white/20 border-l-white/10 rounded-2xl p-10 transition-all '>
         <div className={`grid-cols-2 gap-2 ${click ? 'hidden' : 'grid'}`}>
-          <img src={nos1} className='rounded-md border object-cover border-white/20' />
-          <img src={nos2} className='rounded-md border object-cover border-white/20' />
-          <img src={nos3} className='rounded-md border object-cover border-white/20' />
-          <img src={nos1} className='rounded-md border object-cover border-white/20' />
-          <img src={nos2} className='rounded-md border object-cover border-white/20' />
-          <img src={nos3} className='rounded-md border object-cover border-white/20' />
+          <img src={nos1} className='rounded-md border-2 object-cover border-red-600/20 shadow-2xl shadow-red-500/20' />
+          <img src={nos2} className='rounded-md border-2 object-cover border-red-600/20 shadow-2xl shadow-red-500/20' />
+          <img src={nos3} className='rounded-md border-2 object-cover border-red-600/20 shadow-2xl shadow-red-500/20' />
+          <img src={nos1} className='rounded-md border-2 object-cover border-red-600/20 shadow-2xl shadow-red-500/20' />
+          <img src={nos2} className='rounded-md border-2 object-cover border-red-600/20 shadow-2xl shadow-red-500/20' />
+          <img src={nos3} className='rounded-md border-2 object-cover border-red-600/20 shadow-2xl shadow-red-500/20' />
         </div>
         <div className={`flex-col justify-center gap-2 ${click === false ? 'hidden' : 'flex'}`}>
           <div className={'flex item-center justify-between'} >
@@ -32,7 +32,7 @@ const App = () => {
             <p className='font-medium text-white/80 text-justify'>Fiz isso aqui só para te lembrar nesse dia dos namorados, que você é muito, muito, muito especial. Eu sou muito feliz de ter você todos os dias comigo, você é a prova do amor e cuidado de Deus para mim e é por você que não desisto e quero cada dia ser melhor. Te amo e te quero para sempre e sempre!</p>
           </div>
         </div>
-        <button onClick={() => setClick(true)} className={`bg-red-700/60 shadow-2xl shadow-red-500/50 text-white font-bold p-5 rounded-2xl ${click ? 'hidden' : ''}`}>Clique aqui!</button>
+        <button onClick={() => setClick(true)} className={`bg-red-700/60 shadow-2xl shadow-red-500/50 text-white font-bold p-5 rounded-2xl w-full animate-pulse ${click ? 'hidden' : ''}`}>Clique aqui!</button>
         <button onClick={() => setClick(false)} className={`flex items-center justify-center gap-3 bg-red-700/60 shadow-2xl shadow-red-500/50 text-white font-bold p-5 w-full rounded-2xl ${click ? '' : 'hidden'}`}>
 TE AMO!
             <FaHeart className='text-red-500 text-xl animate-bounce delay-75' />
